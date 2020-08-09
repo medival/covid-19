@@ -1,12 +1,12 @@
 class DataSource {
 
 	static getDataGlobal() {
-		return fetch('https://corona.lmao.ninja/v3/covid-19/all')
+		return fetch('https://corona.lmao.ninja/v3/covid-19/countries')
 			.then(response => {
 				return response.json();
 			})
 			.then(responseJson => {
-				if (responseJson) {
+				if (responseJson.length > 0) {
 					return Promise.resolve(responseJson)
 				} else {
 					return Promise.reject(alert(message))

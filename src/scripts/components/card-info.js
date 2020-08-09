@@ -3,7 +3,6 @@ import "popper.js";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 import "./../../styles/style.css";
 import DataSource from "../data/data-source";
 
@@ -24,15 +23,20 @@ class CardInfo extends HTMLElement {
     async generateCardInfo() {
         const data = await this.getDataIndonesia();
         let html = `<div class="wrapper mt-5 pt-5">
+                    <h5 class="text-center text-white display-4"> Global Data Coronavirus </h5>
                         <div class="row">
                             <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
                                 <div class="card primary-color">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-9">
+                                            <div class="col-12">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white"> ${data.cases} </h3>
-                                                    <p class="text-success ml-2 mb-0 font-weight-medium">+${data.todayCases}</p>
+                                                    <h3 class="mb-0 text-white"> ${new Intl.NumberFormat().format(
+																											data.cases
+																										)} </h3>
+                                                    <p class="text-success ml-2 mb-0 font-weight-medium">+${new Intl.NumberFormat().format(
+																											data.todayCases
+																										)}</p>
                                                 </div>
                                             </div>
                                             <div class="col-3">
@@ -51,7 +55,9 @@ class CardInfo extends HTMLElement {
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white"> ${data.active} </h3>
+                                                    <h3 class="mb-0 text-white"> ${new Intl.NumberFormat().format(
+																											data.active
+																										)} </h3>
                                                     <p class="text-success ml-2 mb-0 font-weight-medium"></p>
                                                 </div>
                                             </div>
@@ -71,8 +77,12 @@ class CardInfo extends HTMLElement {
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white">${data.deaths}</h3>
-                                                    <p class="text-danger ml-2 mb-0 font-weight-medium"> +${data.todayDeaths} </p>
+                                                    <h3 class="mb-0 text-white">${new Intl.NumberFormat().format(
+																											data.deaths
+																										)}</h3>
+                                                    <p class="text-danger ml-2 mb-0 font-weight-medium"> +${new Intl.NumberFormat().format(
+																											data.todayDeaths
+																										)} </p>
                                                 </div>
                                             </div>
                                             <div class="col-3">
@@ -91,8 +101,12 @@ class CardInfo extends HTMLElement {
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white"> ${data.recovered} </h3>
-                                                    <p class="text-success ml-2 mb-0 font-weight-medium">+${data.todayRecovered}</p>
+                                                    <h3 class="mb-0 text-white"> ${new Intl.NumberFormat().format(
+																											data.recovered
+																										)} </h3>
+                                                    <p class="text-success ml-2 mb-0 font-weight-medium">+${new Intl.NumberFormat().format(
+																											data.todayRecovered
+																										)}</p>
                                                 </div>
                                             </div>
                                             <div class="col-3">
