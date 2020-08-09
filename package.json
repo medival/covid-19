@@ -5,14 +5,14 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denahrdyn/covid19.git"
+    "url": "git+https://github.com/medival/covid-19.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/denahrdyn/covid19/issues"
+    "url": "https://github.com/medival/covid-19/issues"
   },
-  "homepage": "https://github.com/denahrdyn/covid19#readme",
+  "homepage": "https://github.com/medival/covid19#readme",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.dev.js"
