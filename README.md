@@ -1,4 +1,6 @@
-# covid-19 data using Bootstrap v.4.5, Webpack, JVectorMap
+# Description
+
+covid-19 data using Bootstrap v.4.5, Webpack, JVectorMap
 
 Pratice using Webpack and Covid-19 API, Creating Custom Component
 
