@@ -6,6 +6,10 @@ Pratice using Webpack and Covid-19 API, Creating Custom Component
 
 ![alt screenshoot](https://github.com/medival/covid-19/blob/master/screenshoot/screenshoot.png)
 
+### Live Preview
+
+[alt link](https://medival.github.io/covid-19);
+
 ### Instalation
 
 1. Clone the project `git clone https://github.com/medival/covid-19.git`
