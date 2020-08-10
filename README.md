@@ -8,7 +8,7 @@ Pratice using Webpack and Covid-19 API, Creating Custom Component
 
 ### Live Preview
 
-[Live Preview](https://medival.github.io/covid-19);
+[Live Preview](https://medival.github.io/covid-19)
 
 ### Instalation
 
